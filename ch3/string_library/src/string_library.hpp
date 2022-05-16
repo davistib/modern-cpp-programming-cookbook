@@ -5,6 +5,7 @@
 
 #include <algorithm>
 #include <string>
+#include <sstream>
 
 // #####################################################################################################################
 
@@ -52,7 +53,7 @@ template <class CharT>
 tstring<CharT> remove(tstring<CharT> text, CharT const ch);
 
 template <class CharT>
-tstring<CharT> split(tstring<CharT> text, CharT const delimiter);
+std::vector<tstring<CharT>> split(tstring<CharT> text, CharT const delimiter);
 
 // Implementation ###################################################################################
 
